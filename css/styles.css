@@ -140,6 +140,7 @@ img {
 .hero-title {
     background-color: #2F303A;
     min-width: 1600px;
+    max-height: 600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)
@@ -212,8 +213,12 @@ img {
 .about-img {
     width: 270px;
     height: 120px;
-    background-color: #f3edf3;
+    background-color: #fcf8fc;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .about-title {
@@ -363,6 +368,31 @@ img {
     color: #FFFFFF;
 }
 
+
+/* ---------------- CLIENTS ---------------- */
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-item + .clients-item {
+    margin-left: 30px;
+}
+
+.clients-link {
+    width: 170px;
+    height: 92px;
+    background-color: teal;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ---------------- FOOTER ---------------- */
 
 .footer {
@@ -445,7 +475,6 @@ img {
 .tel-footer:focus {
     color: #ffffffe1;
 }
-
 
 
 /* - - - - - - - PORTFOLIO - - - - - - - */
