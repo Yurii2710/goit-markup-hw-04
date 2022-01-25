@@ -139,8 +139,14 @@ img {
 
 .hero-title {
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    min-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), url(../img./hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
 }
 
 .hero-h1 {
@@ -158,6 +164,7 @@ img {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
+    padding-top: 200px;
 }
 
 .hero-button {
@@ -180,7 +187,9 @@ img {
     transform: translate(-50%, 0);
 }
 
-
+.button-hero {
+    padding-bottom: 200px; 
+}
 /* ---------------- ABOUT ---------------- */
 
 .about {
@@ -302,7 +311,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .team-profession {
@@ -314,8 +323,27 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 16px;
 }
 
+.team-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-social-item + .team-social-item {
+    margin-left: 10px;
+}
+
+.team-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: teal;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ---------------- FOOTER ---------------- */
 
