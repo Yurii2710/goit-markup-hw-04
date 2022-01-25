@@ -209,6 +209,13 @@ img {
     margin-left: 30px;
 }
 
+.about-img {
+    width: 270px;
+    height: 120px;
+    background-color: #f3edf3;
+    border-radius: 4px;
+}
+
 .about-title {
     font-family: Roboto;
     font-style: normal;
@@ -338,11 +345,22 @@ img {
 .team-social-link {
     width: 44px;
     height: 44px;
-    background-color: teal;
+    background-color: #FFFFFF;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #AFB1B8;
+}
+
+.team-social-icons {
+    fill: currentColor;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 
 /* ---------------- FOOTER ---------------- */
