@@ -103,7 +103,8 @@ img {
     color: #2196F3;
 }
 
-.header-mail {
+
+.header-mail-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -111,14 +112,31 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-mail:hover,
-.header-mail:focus {
+.header-mail-link:hover,
+.header-mail-link:focus {
     color: #2196F3;
 }
 
-.header-tel {
+.header-mail-icons {
+    fill: currentColor;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.header-tel-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -127,11 +145,23 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
     margin-left: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header-tel:hover,
-.header-tel:focus {
+.header-tel-link:hover,
+.header-tel-link:focus {
     color: #2196F3;
+}
+
+.header-tel-icons {
+    fill: currentColor;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
 }
 
 
@@ -371,9 +401,23 @@ img {
 
 /* ---------------- CLIENTS ---------------- */
 
+.clients-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+
 .clients-list {
     display: flex;
     justify-content: center;
+    padding-bottom: 94px;
 }
 
 .clients-item + .clients-item {
@@ -383,15 +427,25 @@ img {
 .clients-link {
     width: 170px;
     height: 92px;
-    background-color: teal;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px; 
-
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #AFB1B8;
 }
+
+.clients-icons {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.team-social-link:focus {
+    color: #2196F3;
+    border: 1px solid #2196F3;
+}
+
 
 /* ---------------- FOOTER ---------------- */
 
