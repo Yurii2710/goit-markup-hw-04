@@ -381,21 +381,28 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #AFB1B8;
 }
 
 .team-social-icons {
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: #2196F3;
-    color: #FFFFFF;
 }
 
+.team-social-link:hover .team-social-icons, 
+.team-social-link:focus .team-social-icons {
+    fill: #FFFFFF;
+}
 
 /* ---------------- CLIENTS ---------------- */
+
+.clients-section { 
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .clients-title {
     font-family: Roboto;
@@ -407,13 +414,11 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 
 .clients-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 94px;
 }
 
 .clients-item + .clients-item {
@@ -437,7 +442,7 @@ img {
 }
 
 .clients-link:hover,
-.team-social-link:focus {
+.clients-link:focus {
     color: #2196F3;
     border: 1px solid #2196F3;
 }
